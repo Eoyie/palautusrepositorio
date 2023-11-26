@@ -97,5 +97,5 @@ class TestKauppa(unittest.TestCase):
         self.kauppa.poista_korista(1)
         self.kauppa.tilimaksu("pekka", "12345")
 
-        # varmistetaan, että metodia tilisiirto on kutsuttu oikeilla arvoilla
+        # varmistetaan, että metodia tilisiirto on kutsuttu oikeilla arvoilla 
         self.pankki_mock.tilisiirto.assert_called_with('pekka', 2, '12345', '33333-44455', 8)
